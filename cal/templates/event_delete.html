@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Event_delete
+{% endblock %}
+
+
+{% block content %}
+<div style="margin: 40px 0">
+    <h2 class="d-flex justify-content-center">Want to delete this event?</h2>
+</div>
+<div class="d-flex justify-content-center">
+    <form method="post" style="margin: 20px 10px">
+        {% csrf_token %}
+        <input class="p-2 btn-success rounded" type="submit" value="yes">
+    </form>
+    <form action="../" style="margin: 20px 10px">
+        <input class="p-2 btn-danger rounded" type="submit" value="no">
+    </form>
+</div>
+{% endblock %}
+

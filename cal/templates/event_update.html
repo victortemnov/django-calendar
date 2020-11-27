@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Event_update
+{% endblock %}
+
+
+{% block content %}
+<div>
+    <form method="post" class="mt-5">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="px-4 mx-5 btn-warning rounded" type="submit" value="edit">
+    </form>
+    <p class="m-4">Or <a class="px-3 py-1 text-dark bg-danger rounded" href="delete/">delete</a> this event.</p>
+</div>
+{% endblock %}
+

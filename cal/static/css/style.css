@@ -1,0 +1,83 @@
+/* general styles */
+body {
+    font-family: "ptsans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.btn {
+    color: black;
+    font-size: 20px;
+}
+
+.clearfix {
+    margin: 15px;
+}
+
+.form {
+    margin: auto;
+}
+
+.form input, .form select, .form textarea {
+    border: 1px solid black;
+    outline: none;
+    background: none;
+    padding: 5px;
+    width: 100%;
+}
+
+/* app styles */
+.title {
+    text-align: center;
+    margin: 10px;
+}
+
+hr {
+    background-color: #0069d9;
+    height: 3px;
+}
+
+.calendar {
+    width: 65%;
+    margin: auto;
+    font-size: 13px;
+}
+
+.calendar tr, .calendar td {
+    border: 2px solid black;
+}
+
+.calendar th {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.calendar td {
+    width: 200px;
+    height: 150px;
+    padding: 20px 0px 0px 5px;
+}
+
+.month {
+    font-size: 25px;
+}
+
+.date {
+    font-size: 25px;
+}
+
+ul {
+    height: 100%;
+    padding: 0px 5px 0px 20px;
+}
+
+a {
+    color: blue;
+}

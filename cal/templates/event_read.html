@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Event_list
+{% endblock %}
+
+
+{% block content %}
+<table class="table mt-2">
+    <thead class="thead-primary">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Start time</th>
+            <th scope="col">End time</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for event in object_list %}
+        <tr>
+            <th scope="row">{{ forloop.counter }}</th>
+            <td><a href="{{event.id}}/">{{ event.title }}</a></td>
+            <td>{{ event.start_time }}</td>
+            <td>{{ event.end_time }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+

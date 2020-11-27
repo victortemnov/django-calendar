@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Event_create
+{% endblock %}
+
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input class="btn btn-success rounded" type="submit" value="save">
+</form>
+{% endblock %}
